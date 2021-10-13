@@ -1,0 +1,264 @@
+<?php
+include_once('./common.php');
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="/og_img.jpg">
+	<meta name="title" content="담하-브랜드에 노을을 입히다">
+	<meta name="description" content="부산온라인마케팅, 부산병원마케팅, 브랜드기획, 마케팅기획,경영기획, 경영행정컨설팅, 병원마케팅, 기업마케팅, 병원홈페이지제작, 기업홈페이지제작">
+	<meta name="keywords" content="부산온라인마케팅, 부산병원마케팅, 브랜드기획, 마케팅기획, 경영기획, 경영행정컨설팅, 병원마케팅, 기업마케팅, 병원홈페이지제작, 기업홈페이지제작"> 
+	<meta property="og:title" content="담하-브랜드에 노을을 입히다">
+	<meta property="og:url" content="http://damha.co.kr">
+	<meta property="og:description" content="부산온라인마케팅, 부산병원마케팅, 브랜드기획, 마케팅기획, 경영기획, 경영행정컨설팅, 병원마케팅, 기업마케팅, 병원홈페이지제작, 기업홈페이지제작">
+	<link rel="canonical" href="http://damha.co.kr">
+
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+	<title>담하 - 브랜드에 노을을 입히다</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+
+<body>
+	<style>
+	* {margin: 0;padding: 0;}
+	.chat{position:fixed; right : 50px; bottom: 150px; z-index: 99; cursor: pointer;}
+
+	.main_pg{width:100%; max-width:1920px; margin:0 auto;}
+	.main_pg .imgwr{width:100%; margin:0 auto; }
+	.main_pg .imgwr.pc{display:block;}
+	.main_pg .imgwr.mb{display:none;}
+	.main_pg .form{background:#e47b41; padding:10px 0; position:fixed; bottom:0; left:0; width:100%;}
+	.main_pg .form table{width:100%;}
+	.main_pg .form table td{padding:0 11px;}
+	.main_pg .form .inner{width:100%; max-width:1400px; margin:0 auto;}
+	.main_pg .form .txtimg{width:190px; height:80px; float:left; margin-right:10px; margin-top:40px;}
+	.main_pg .form .txtform{width:100%; max-width:1200px; float:left; margin-top:20px;}
+	.main_pg .form input[type=text]{border:1px solid #d5d5d5; height:50px; text-indent:11px; width:100%;}
+	.main_pg .form select{border:1px solid #d5d5d5; height:50px; text-indent:11px; width:100%;}
+	.main_pg .form textarea{border:1px solid #d5d5d5; height:50px; width:100%; resize:none;}
+	.main_pg .form input[type=submit]{width:150px; height:75px; background:#fff; border:none;}
+	.main_pg .form label{color:#fff;}
+	.main_pg .pcs{display:block;}
+	.main_pg .mbs{display:none;}
+	.m-img{width:100% !important;}
+	.main_pg #form1{display:block;}
+	.main_pg #form2{display:none;}
+	@media (max-width: 1100px){
+		.chat { width: 150px; right: 10px; top: auto; bottom: 30px; }
+		.main_pg .imgwr.pc{display:none;}
+		.main_pg .imgwr.mb{display:block;}
+		.main_pg .pcs{display:none;}
+		.main_pg .mbs{display:block;}
+		.main_pg #form1{display:none;}
+		.main_pg #form2{display:block;}
+		.main_pg .form .txtimg{display:none;}
+		.main_pg .form{background:none; height:inherit; position:inherit; bottom:inherit; left:inherit;}
+		.main_pg .form .txtform{width:95%; margin:0 auto; float:inherit;}
+		.main_pg .form input[type=text]{margin-bottom:10px;}
+		.main_pg .form select{margin-bottom:10px;}
+		.main_pg .form input[type=submit]{width:100%; color:#fff; height:75px; background:#e47b41; border:none; margin-top:10px;}
+		.main_pg #form2 label{color:#444;}
+	}
+	</style>
+
+
+
+		<a href="https://pf.kakao.com/_Jxldks/chat" class="chat"><img src="/img/chat.png" class="img-responsive m-img" alt="담하카톡채널"></a></div>
+
+
+	<div class="main_pg">
+		<div class="imgwr pc"><img src="<?php echo G5_IMG_URL?>/p_on1.jpg" class="m-img" alt="주식회사담하소개"></div>
+		<div class="imgwr mb"><img src="<?php echo G5_IMG_URL?>/m_on1.jpg" class="m-img" alt="주식회사담하소개"></div>
+		<div class="form pcs">
+			<form onsubmit="return fastAjax(this);" id="form1">
+				<input type="hidden" name="wr_8" value="PC" required>
+				<div class="inner">
+					<table>					
+						<tr>
+							<td width="14%"><img src="/img/dblogo.png" class="m-img"/></td>
+							<td width="12%"><input type="text" placeholder="이름" name="wr_name" required></td>
+							<td width="14%"><input type="text" placeholder="연락처" name="wr_1" required></td>
+							<td width="17%">
+								<select name="ca_name" required>
+									<option value="">상담채널</option>
+									<option value="브랜드블로그">브랜드블로그</option>
+									<option value="상위노출블로그">상위노출블로그</option>
+									<option value="인플루언서광고">인플루언서광고</option>
+									<option value="SNS광고">SNS광고</option>
+									<option value="검색광고">검색광고</option>
+									<option value="언론홍보">언론홍보</option>
+									<option value="홈페이지제작">홈페이지제작</option>
+								</select>
+							</td>
+							<td>
+								<textarea name="wr_content" required></textarea>
+							</td>
+							<td rowspan="1" width="10%">
+								<input type="submit" value="문의하기"/>
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2" colspan="5" style="text-align:right;">
+								<input type="checkbox" required name="agree"/>
+								<label name="agree">개인정보 수집 및 이용에 동의합니다.</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+		<div class="form mbs">
+			<div class="inner">			
+				<div class="txtimg">
+					<img src="/img/dblogo.png" alt="담하로고">
+				</div>
+				<form onsubmit="return fastAjax2(this);" id="form2">
+					<div class="txtform">
+						<input type="hidden" name="wr_8" value="MOBILE" required>
+						<input type="text" placeholder="이름" name="wr_name" required>
+						<input type="text" placeholder="연락처" name="wr_1" required>
+						<select name="ca_name" required>
+							<option value="">상담채널</option>
+							<option value="브랜드블로그">브랜드블로그</option>
+							<option value="상위노출블로그">상위노출블로그</option>
+							<option value="인플루언서광고">인플루언서광고</option>
+							<option value="SNS광고">SNS광고</option>
+							<option value="검색광고">검색광고</option>
+							<option value="언론홍보">언론홍보</option>
+							<option value="홈페이지제작">홈페이지제작</option>
+						</select>
+						<textarea name="wr_content" required></textarea>
+						<input type="submit" value="문의하기"/><br><br>
+						<input type="checkbox" required name="agree"/>
+						<label name="agree">개인정보 수집 및 이용에 동의합니다.</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="imgwr mb"><img src="<?php echo G5_IMG_URL?>/m_on2.jpg" class="m-img" alt="담하소개"></div>
+		
+	</div>
+
+</body>
+
+<script>
+	function fastAjax(f) {
+		var agree = f.agree.checked;
+		var wr_name = f.wr_name.value;
+		var wr_1 = f.wr_1.value;
+		var ca_name = f.ca_name.value;
+		var wr_content = f.wr_content.value;
+		if (!agree) {
+			alert('개인정보 취급방침에 동의해주세요.');
+			return false;
+		}
+		else if (!wr_name) {
+			alert('이름을 입력하세요.');
+			return false;
+		} else if (!wr_1) {
+			alert('연락처를 입력하세요.');
+			return false;
+		} else if (!ca_name) {
+			alert('상담채널을 선택하세요.');
+			return false;
+		} else if (!wr_content) {
+			alert('문의내용을 입력하세요.');
+			return false;
+		}
+		$.ajax({
+			url: '/ajax/fast_ajax.php',
+			type: 'post',
+			dataType: 'json',
+			data: {
+				wr_name : wr_name,
+				wr_1 : wr_1,
+				ca_name : ca_name,
+				wr_content : wr_content
+			},
+		})
+		.done(function(r) {
+			if (r.result) {
+				alert('빠른상담이 접수되었습니다.');
+				$('#form1')[0].reset();
+			} else {
+				alert('오류가 발생했습니다.');
+				location.reload();
+			}
+		})
+		.fail(function(r) {
+			console.log(r);
+		});
+		return false;
+	}
+	function fastAjax2(f) {
+		var agree = f.agree.checked;
+		var wr_name = f.wr_name.value;
+		var wr_1 = f.wr_1.value;
+		var ca_name = f.ca_name.value;
+		var wr_content = f.wr_content.value;
+		if (!agree) {
+			alert('개인정보 취급방침에 동의해주세요.');
+			return false;
+		}
+		else if (!wr_name) {
+			alert('이름을 입력하세요.');
+			return false;
+		} else if (!wr_1) {
+			alert('연락처를 입력하세요.');
+			return false;
+		} else if (!ca_name) {
+			alert('상담채널을 선택하세요.');
+			return false;
+		} else if (!wr_content) {
+			alert('문의내용을 입력하세요.');
+			return false;
+		}
+		$.ajax({
+			url: '/ajax/fast_ajax.php',
+			type: 'post',
+			dataType: 'json',
+			data: {
+				wr_name : wr_name,
+				wr_1 : wr_1,
+				ca_name : ca_name,
+				wr_content : wr_content
+			},
+		})
+		.done(function(r) {
+			if (r.result) {
+				alert('빠른상담이 접수되었습니다.');
+				$('#form2')[0].reset();
+			} else {
+				alert('오류가 발생했습니다.');
+				location.reload();
+			}
+		})
+		.fail(function(r) {
+			console.log(r);
+		});
+		return false;
+	}
+</script>
