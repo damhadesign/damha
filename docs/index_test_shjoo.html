@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>DAMHA</title>
+    <link href="../www/css/tab.css" type="tab.css" rel="stylesheet">
+    <style>
+        .head {
+            position: absolute;
+            width: 1920px;
+            height: 624px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .head_font_title {
+            position: absolute;
+            /* width: 309px; 일단 임의로 설정 */
+            height: 40px;
+            left: 258px;
+            top: 100px;
+
+            font-family: Spoqa Han Sans Neo;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .head_font_damha {
+            position: absolute;
+            width: 658px;
+            height: 195px;
+            left: 248px;
+            top: 113px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 160px;
+            line-height: 195px;
+        }
+
+        .frame {
+            position: absolute;
+            width: 1182px;
+            height: 570px;
+            left: 838px;
+            top: -90px;
+        }
+
+        .vector {
+            /* position: absolute; */
+            /* width: 1402px;
+            height: 1127px; */
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+            margin-top: 346px;
+            margin-left: 358px;
+
+        }
+
+        .vector2 {
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+            margin-top: -234px;
+            margin-left: 280px;
+        }
+
+        .vector3 {
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+            margin-top: 365px;
+            margin-left: 280px;
+        }
+
+        .vector4 {
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+            margin-top: 330px;
+            margin-left: 280px;
+        }
+
+        .vector5 {
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+            margin-top: 75px;
+            margin-left: 280px;
+        }
+
+        .vector6{
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+            margin-top: 504px;
+            margin-left: 280px;
+        }
+
+        .vector7{
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+        }
+
+        .two {
+            font-family: Spoqa Han Sans Neo;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 60px;
+            color: #E47B41;
+        }
+
+        .strength1 {
+            width: 100%;
+            height: 100%;
+            left: 258px;
+            top: 624px;
+            margin-top: 330px;
+            margin-left: 280px;
+        }
+
+        .con {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 페이징 부분 */
+        html {
+            overflow: hidden;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .brand {
+            position: absolute;
+            left: 260px;
+            top: -180px;
+
+            font-family: Spoqa Han Sans Neo;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 60px;
+            color: #E47B41;
+        }
+
+        .brand2 {
+            position: absolute;
+            left: 412px;
+            top: -270px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 180px;
+            line-height: 219px;
+
+            color: rgba(0, 0, 0, 0.03);
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            background: #fff url(https://postfiles.pstatic.net/MjAxOTAyMThfMTgx/MDAxNTUwNDc3NzYyNzYw.elfXJVwvgxMih0VJbokx-UZInXnRagw5l0VfTpVqGdwg.mNtNt2LWlDIs3JBeCKESviN3RCkwyEfDrDyZ1E4rlqwg.JPEG.naver_diary/20_나이트오프뮤직비디오_예쁘게시들어가고싶어너와.jpg?type=w773) no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            line-height: 1.6em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        #tab-menu {
+            width: 70%;
+            background: rgba(196, 196, 196, 0.2);
+            position: absolute;
+            left: 50%;
+            top: -40px;
+            transform: translatex(-50%);
+            border-radius: 4px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #tab-menu ul {
+            overflow: hidden;
+        }
+
+        #tab-menu li {
+            float: left;
+            width: 448px;
+            text-align: center;
+
+        }
+
+        #tab-menu li a {
+            display: block;
+            color: #D5D5D5;
+            padding: 15px 20px;
+            font-weight: bold;
+        }
+
+        #tab-menu li.active a {
+            border-bottom: 3px solid #E47B41;
+            color: black;
+        }
+
+        #tab-menu li div {
+            position: absolute;
+            left: 0;
+            background: rgba(196, 196, 196, 0.2);
+            padding: 120px;
+            box-sizing: border-box;
+            border-radius: 0 0 4px 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+
+        <div class="content">
+            <p class="head_font_title">브랜드에 노을을 입히다</p>
+            <p class="head_font_damha">DAMHA</p>
+            <p class="frame"><img src="../www/img/Frame4.gif"></p>
+        </div>
+        <div class="content">
+            <div class="vector"><img src="../www/img/01-주요사업소개23.gif"></div>
+        </div>
+        <div class="content">
+        </div>
+        <div class="content">
+            <div>
+                <span class="brand">상품구성</span>
+                <span class="brand2">02</span>
+
+                <!-- 탭 메뉴 -->
+                <div class="tab-tab"></div>
+                <div id="tab-menu">
+                    <ul>
+                        <li class="active"><a href="#"><span style="font-family: Spoqa Han Sans Neo;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 32px;
+                            line-height: 40px;
+                            /* identical to box height *">브랜딩</span> <span style="font-family: Montserrat;
+                            font-weight: bold;
+                            font-size: 40px;
+                            line-height: 49px;
+                            font-style: normal;
+                            
+                            /* identical to box height */
+                            ">BRANDING</span></a>
+                            <div style="padding: 186px;"><img src="../www/img/Group-41.gif" style="padding-left: 89px;
+                            border-right-width: 0px;
+                            padding-right: 94px;"></div>
+                        </li>
+                        <li><a href="#"><span style="font-family: Spoqa Han Sans Neo;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 32px;
+                            line-height: 40px;
+                            /* identical to box height *">마케팅</span> <span style="font-family: Montserrat;
+                            font-weight: bold;
+                            font-size: 40px;
+                            line-height: 49px;
+                            font-style: normal;
+                            /* identical to box height */
+                            ">MARKETING</span></a>
+                            <div><img src="../www/img/Group-422.gif" style="padding: 58px;"></div>
+                        </li>
+                        <li><a href="#"><span style="font-family: Spoqa Han Sans Neo;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 32px;
+                            line-height: 40px;
+                            /* identical to box height *">컨설팅</span> <span style="font-family: Montserrat;
+                            font-weight: bold;
+                            font-size: 40px;
+                            line-height: 49px;
+                            font-style: normal;
+                            /* identical to box height */
+                            ">CONSULTING</span></a></a>
+                            <div style="padding-left: 89px;
+                            padding-right: 26px;"><img src="../www/img/Group-76.gif" style="padding-left: 94px;
+    padding-right: 146px;"></div>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="content" style="top: -300px;">
+            <div class="vector3"><img src = "../www/img/ki.gif" style="height: 1938px;"></div>
+        </div>
+        <div class="content">
+            <div class="vector4"></div>
+        </div>
+        <div class="content">
+            <div class="vector5"><img src = "../www/img/마케팅.gif"></div>
+        </div>
+        <div class="content">
+            <div class="vector6"><img src = "../www/img/Group-777.gif"></div>
+        </div>
+        <div class="content">
+            <div class="vector7"><img src = "../www/img/05-contact1211.gif"></div>
+        </div>
+        <!-- <div class="content"> -->
+            <!-- <h1>7</h1> -->
+        <!-- </div> -->
+        <!-- <div class="content"> -->
+            <!-- <h1>7</h1> -->
+        <!-- </div> -->
+        <!-- <div class="content"> -->
+            <!-- <h1>7</h1> -->
+            <!-- </div> -->
+            <!-- body end -->
+    </div>
+</body>
+
+<script>
+    window.addEventListener("wheel", function (e) {
+        e.preventDefault();
+    }, { passive: false });
+
+    var $html = $("html");
+
+    var page = 1;
+
+    var lastPage = $(".content").length;
+
+    $html.animate({ scrollTop: 0 }, 10);
+
+    $(window).on("wheel", function (e) {
+
+        if ($html.is(":animated")) return;
+
+        if (e.originalEvent.deltaY > 0) {
+            if (page == lastPage) return;
+
+            page++;
+        } else if (e.originalEvent.deltaY < 0) {
+            if (page == 1) return;
+
+            page--;
+        }
+        var posTop = (page - 1) * $(window).height();
+
+        $html.animate({ scrollTop: posTop });
+
+    });
+
+    //탭메뉴
+    var tabMenu = $("#tab-menu");
+
+    //컨텐츠 내용을 숨겨주자
+    tabMenu.find("ul > li > div").hide();
+    tabMenu.find("li.active > div").show();
+
+    //두번째 버튼 클릭 --> 모든 active 삭제 --> 내가 클릭한 버튼 active 추가
+    function tabList(e) {
+        e.preventDefault(); //#의 기능을 차단
+        var target = $(this);
+        target.next().show().parent("li").addClass("active").siblings("li").removeClass("active").find("div").hide();
+        //버튼을 클릭하면 ~ div를 보여주고
+        //부모의 li 태그에 클래스를 추가하고
+        //형제의 li 태그에 클래스를 제거하고
+        //제거한 자식의 div 태그를 숨겨줌
+    }
+
+    tabMenu.find("ul > li > a").click(tabList).focus(tabList);
+</script>
+
+
+</html>
