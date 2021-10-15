@@ -250,9 +250,11 @@ line-height: 1.2em;
     width: 60vw;
     top: 71.5vw;
     left: 14.3vw;
-    font-size: 1.2em;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 1.2rem;
     font-weight: bold;
     z-index: 99;
+    opacity: 0.999;
 }
 
 .img2{
@@ -528,28 +530,28 @@ div {
   }
 
 
-  .img8 {animation: motion 1.5s linear 0s infinite alternate; margin-top: 0;}
+  .img8 {animation: motion 0.8s linear 0s infinite alternate; margin-top: 0;}
           
   @keyframes motion {
       0% {margin-top: 0px;}
       100% {margin-top: 10px;}
   }
 
-  .img9 {animation: motion 1.5s linear 0s infinite alternate; margin-top: 0;}
+  .img9 {animation: motion 0.8s linear 0s infinite alternate; margin-top: 0;}
           
   @keyframes motion {
       0% {margin-top: 0px;}
       100% {margin-top: 10px;}
   }
 
-  .img10 {animation: motion 1.5s linear 0s infinite alternate; margin-top: 0;}
+  .img10 {animation: motion 0.8s linear 0s infinite alternate; margin-top: 0;}
           
   @keyframes motion {
       0% {margin-top: 0px;}
       100% {margin-top: 10px;}
   }
 
-  .item2 {animation: motion 0.9s linear 0s infinite alternate; margin-top: 0;}
+  .item2 {animation: motion 0.6s linear 0s infinite alternate; margin-top: 0;}
           
   @keyframes motion {
       0% {margin-top: 0px;}
@@ -557,20 +559,42 @@ div {
   }
 
   
-  .font {animation: motion 0.9s linear 0s infinite alternate; margin-top: 0;}
+  .font {animation: motion 0.6s linear 0s infinite alternate; margin-top: 0;}
           
   @keyframes motion {
       0% {margin-top: 0px;}
       100% {margin-top: 10px;}
   }
 
-.business3{animation: motion 1.3s linear 0s infinite; margin-top: 0;}
-        
+.content6{
+    width: 100%;
+    height: 34%;
+    display: flex;
+    background-color: #000000;;
+    position: absolute;
+    top:257vw;
+}
+
+.break6{
+    position: absolute;
+    left: 10vw;
+    top: 72vw;
+    z-index: 1;
+}
+
+.break6 {
+    animation: motion 0.8s linear 0s infinite alternate; 
+    margin-top: 0;}
+    
 @keyframes motion {
-	0% {margin-top: 0px;}
-	20% {margin-top: 10px;}
-	40% {margin-top: 0px;}
-	60% {margin-top: 10px;}
-	80% {margin-top: 0px;}
-	100% {margin-top: 0px;}
+    0% {margin-top: 0px;}
+    100% {margin-top: 10px;}
+}
+
+.content7{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 100vh;
+    background-color: aqua
 }
