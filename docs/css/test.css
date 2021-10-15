@@ -508,12 +508,14 @@ img{
     max-width: 35vw;
 }
 
-img {
-    animation-duration: 7s; /*3초로 지정*/
+div {
+    animation-duration: 1.4s; /*3초로 지정*/
     animation-name: slidein;
-    animation-iteration-count: infinite; /*무한반복 코드*/
-    animation-direction: alternate; /*앞뒤로 움직이기*/
-  }
+    /* animation-iteration-count: infinite; 무한반복 코드 */
+    /* animation-direction: alternate; 앞뒤로 움직이기 */
+}
+
+
   
   @keyframes slidein {
     from {
