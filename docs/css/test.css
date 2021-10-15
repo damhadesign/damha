@@ -514,8 +514,6 @@ div {
     /* animation-iteration-count: infinite; 무한반복 코드 */
     /* animation-direction: alternate; 앞뒤로 움직이기 */
 }
-
-
   
   @keyframes slidein {
     from {
@@ -528,3 +526,51 @@ div {
       width: 100%;
     }
   }
+
+
+  .img8 {animation: motion 1.5s linear 0s infinite alternate; margin-top: 0;}
+          
+  @keyframes motion {
+      0% {margin-top: 0px;}
+      100% {margin-top: 10px;}
+  }
+
+  .img9 {animation: motion 1.5s linear 0s infinite alternate; margin-top: 0;}
+          
+  @keyframes motion {
+      0% {margin-top: 0px;}
+      100% {margin-top: 10px;}
+  }
+
+  .img10 {animation: motion 1.5s linear 0s infinite alternate; margin-top: 0;}
+          
+  @keyframes motion {
+      0% {margin-top: 0px;}
+      100% {margin-top: 10px;}
+  }
+
+  .item2 {animation: motion 0.9s linear 0s infinite alternate; margin-top: 0;}
+          
+  @keyframes motion {
+      0% {margin-top: 0px;}
+      100% {margin-top: 10px;}
+  }
+
+  
+  .font {animation: motion 0.9s linear 0s infinite alternate; margin-top: 0;}
+          
+  @keyframes motion {
+      0% {margin-top: 0px;}
+      100% {margin-top: 10px;}
+  }
+
+.business3{animation: motion 1.3s linear 0s infinite; margin-top: 0;}
+        
+@keyframes motion {
+	0% {margin-top: 0px;}
+	20% {margin-top: 10px;}
+	40% {margin-top: 0px;}
+	60% {margin-top: 10px;}
+	80% {margin-top: 0px;}
+	100% {margin-top: 0px;}
+}
