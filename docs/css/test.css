@@ -1,0 +1,528 @@
+/* body {
+    background: #fff;
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  } */
+
+  body , html{
+      height: 100vh;
+      width: 100vw;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    /* flex-wrap: wrap;  */
+    /*밑으로안가고 위에 계속*/
+}
+
+.item1 {
+    position: absolute;
+    left: 16vw;
+    top: 6.4vw;
+
+    font-family: -webkit-pictograph;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.8em;
+    line-height: 2.5rem;
+    
+}
+
+
+
+.item2 {
+    position: absolute;
+    left: 15.4vw;
+    top: 7vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 12.188rem;
+
+/* identical to box height */
+
+
+color: #000000;
+}
+
+
+.img{
+    position: absolute;
+    width: 62.500vw;
+    height: 27.708vw;
+    left: 38%;
+    top: -12%;
+}
+
+.ikon_in{
+    position: fixed;
+    right: 1rem;
+    bottom: 9.375rem;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.in{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+
+.ikon_in:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+.ikon_ka{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 98;
+    cursor: pointer;
+}
+
+.ka{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+.ikon_ka:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.ikon_bl{
+    position: fixed;
+    right: 1rem;
+    bottom: 5.188rem;
+    z-index: 97;
+    cursor: pointer;
+}
+
+.bl{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+
+.ikon_bl:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.content3{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap; /*밑으로안가고 위에 계속*/
+}
+
+.business1{
+    position: absolute;
+    top: 50vw;
+    left:15%;
+    font-family: Spoqa Han Sans Neo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #E47B41;
+}
+
+.business2{
+    position: absolute;
+    top: 45vw;
+    left:28.6vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 180px; /*나중에 rem 으로 바꾸기*/
+    line-height: 219px;
+
+    color: rgba(0, 0, 0, 0.03);
+
+}
+
+.business3{
+    position: absolute;
+    top: 57vw;
+    left: 14vw;
+    font-family: Spoqa Han Sans Neo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 85px;
+    color: #000000;
+    z-index: 99;
+}
+
+.business4{
+    position: absolute;
+font-family: Spoqa Han Sans Neo;
+font-style: normal;
+font-weight: 300;
+font-size: 1em;
+line-height: 1.2em;
+}
+
+.font1{
+    position: absolute;
+    width: 60vw;
+    top: 64vw;
+    left: 14.3vw;
+    font-weight: bold;
+    opacity: 0.75;
+    z-index: 99;
+}
+.font2{
+    position: absolute;
+    width: 60vw;
+    top: 66vw;
+    left: 14.3vw;
+    font-weight: bold;
+    opacity: 0.75;
+    z-index: 99;
+}
+.font3{
+    position: absolute;
+    width: 60vw;
+    top: 68vw;
+    left: 14.3vw;
+    font-weight: bold;
+    opacity: 0.75;
+    z-index: 99;
+}
+
+.font4{
+    position: absolute;
+    width: 60vw;
+    top: 71.5vw;
+    left: 14.3vw;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.img2{
+    position: absolute;
+    top: 80%;
+    left: 55.2%;
+    
+}
+.img3{
+    position: absolute;
+    top: 86vw;
+    left: 14vw;
+}
+
+img{
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important;
+}
+
+.bre{
+    font-family: Spoqa Han Sans Neo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    
+}
+
+.bra{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.063rem;
+    font-style: normal;
+}
+
+.lo{
+    padding: 7vw;
+    width: 74.4vw;
+}
+
+/* .mar{
+    padding: 7vw;
+    width: 70vw;
+} */
+
+.img_mar2{
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.img4{
+    padding-left: 5.563rem;
+                    border-right-width: 0rem;
+                    padding-right: 5.875rem;
+}
+
+.mar{
+    font-family: Spoqa Han Sans Neo;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+}
+
+.mar2{
+    font-family: Montserrat;
+                    font-weight: bold;
+                    font-size: 2.5rem;
+                    line-height: 3.063rem;
+                    font-style: normal;
+                    /* identical to box height */
+}
+
+.img5{
+    padding: 3.625rem;
+}
+
+.con{
+    font-family: Spoqa Han Sans Neo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.con2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.063rem;
+    font-style: normal;
+}
+
+.gr{
+    padding-left: 5.563rem;
+    padding-right: 1.625rem;
+}
+
+.img6{
+    padding-left: 2vw;
+    padding-right: 9vw;
+}
+
+.content4{
+    display: flex;
+    position: absolute;
+    top: 120vw;
+}
+
+.test{
+    display: flex;
+}
+
+.tab1{
+    position: absolute;
+    top: 110vw;
+    left: 14vw;
+    font-family: Spoqa Han Sans Neo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #E47B41;
+}
+.tab2{
+    position: absolute;
+    top: 106vw;
+    left: 21.4vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 219px;
+    color: rgba(0, 0, 0, 0.03);
+}
+
+.tab-tab{
+    display: flex;
+}
+
+#tab-menu {
+    position: absolute;
+    width: 75%;
+    top: 120vw;
+    left: 50%;
+    background: rgba(196, 196, 196, 0.2);
+    transform: translatex(-50%);
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #tab-menu ul {
+    overflow: hidden;
+  }
+  
+  #tab-menu li {
+    float: left;
+    width: 448px;
+    text-align: center;
+  }
+  
+  #tab-menu li a {
+    display: block;
+    color: #d5d5d5;
+    padding: 15px 20px;
+    font-weight: bold;
+  }
+  
+  #tab-menu li.active a {
+    border-bottom: 3px solid #e47b41;
+    color: black;
+  }
+  
+  #tab-menu li div {
+    position: absolute;
+    left: 0;
+    background: rgba(196, 196, 196, 0.2);
+    padding: 11.625rem;
+    box-sizing: border-box;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .img_mar2{
+    padding:2vw;
+  }
+
+.content4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    background: #000000;
+    top: 160vw;
+}
+
+.img7{
+    position: absolute;
+    opacity: 0.2;
+    left: 4vw;
+}
+
+.black2{
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11.25rem;
+    line-height: 13.688rem;
+    color: #FFFFFF;
+    opacity: 0.2;
+    left: 54vw;
+    top: 26vh;
+}
+
+.black3{
+    position: absolute;
+    left: 10vw;
+    top: 30vw;
+}
+
+.content5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #000000;;
+    position: absolute;
+    top:48vw;
+}
+.black3 img{
+    max-width: 35vw;
+}
+
+.black4{
+    position: absolute;
+    left: 50vw;
+    top: 30vw;
+}
+
+.black4 img{
+    max-width: 35vw;
+}
+
+.black5{
+    position: absolute;
+    left: 10vw;
+    top: 50.5vw;
+}
+
+.black5 img{
+    max-width: 35vw;
+}
+
+img {
+    animation-duration: 7s; /*3초로 지정*/
+    animation-name: slidein;
+    animation-iteration-count: infinite; /*무한반복 코드*/
+    animation-direction: alternate; /*앞뒤로 움직이기*/
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
